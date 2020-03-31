@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Library Registration Form</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="sketch.js"></script>
+
+</head>
+
+<body class="body">
+
+    <img src="mit.png" width="450" height="110" class="center">
+    <img src="book.png" width="180" height="150" class="center2"> <h1 class="main">DEPARTMENT OF LIBRARY </h1>
+
+    <div class = "main">
+
+        <h3 class = "heading">Library Registration Form</h3>
+
+        <form onsubmit="return false">
+	<center>
+	 <table width="350px" height="200px">
+		<tr>
+		<td>Student's Name</td>
+
+            <td> <input type="text" id="name" onchange="Name(this)" placeholder="Abc Xyz"><br><br></td>
+		</tr>
+		<tr>
+		<td>PRN</td>
+
+           <td> <input type="text" id="prn" onchange="PRN(this)" placeholder="0120170513"><br><br></td>
+		</tr>
+	<tr>
+		<td>DOB</td>
+		<td><input type="text" id="dob" onchange="DOB(this)" placeholder="DD-MM-YYYY"><br><br></td>
+	</tr>
+	<tr>
+		<td>Semester</td>
+		<td> <input type="text" id="semester" onchange="Semester(this)" placeholder="1"><br><br></td>
+	</tr>
+	<tr>
+	
+            <td>Year</td> 
+		<td><select>
+
+            <option value="fy">F.Y.</option>
+
+            <option value="sy">S.Y.</option>
+
+            <option value="ty">T.Y.</option>
+
+            <option value="btech">B.Tech.</option>
+
+        </select><br><br></td>
+	</tr>
+	<tr>
+
+            <td>Department</td> <td><select>
+
+            <option value="comp">Computer Science</option>
+
+            <option value="mech">Mechanical Engineering</option>
+
+            <option value="civil">Civil Engineering</option>
+
+            <option value="entc">ENTC</option>
+
+            <option value="elec">Electrical</option>
+
+            <option value="it">IT</option>
+
+            <option value="chem">Chemical Engineering</option>
+
+        </select><br><br></td>
+	</tr>
+	
+		<tr>
+            <td>Email</td> 
+		<td><input type="text" id="mail" onchange="Email(this)" placeholder="xyz@mitaoe.ac.in"><br><br></td>
+	</tr>
+
+            <tr>
+		<td>Student Mobile Number</td>
+		<td><input type="text" id="Sno" onchange="SphoneNo(this)" placeholder="+918382623742"><br><br></td>
+		</tr>
+
+        <tr>    
+	<td>Parent Mobile Number</td>
+	<td><input type="text" id="Pno" onchange="PphoneNo(this)" placeholder="+918382623742"><br><br></td>
+	</tr>
+	
+		<tr>
+
+           <td>Address</td> <td><input type="text" id="address" onchange="add(this)"placeholder="Address"><br><br></td>
+		</tr>
+	<tr>
+            <td><button onclick="myFunc()">Submit</button></td>
+
+           <td> <input type="reset" value="Reset"> </td>
+	</tr>
+
+
+		</center>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="sketch.js"></script>
+</head>
+<body class="body">
+    <img src="mit.png" width="450" height="110">
+    <div class = "main">
+        <h3 class = "heading">Library Registration Form</h3>
+        <form onsubmit="return false">
+            Student's Name: <input type="text" id="name" onchange="Name(this)" placeholder="Abc Xyz"><br><br>
+            PRN: <input type="text" id="prn" onchange="PRN(this)" placeholder="0120170513"><br><br>
+            DOB: <input type="text" id="dob" onchange="DOB(this)" placeholder="DD-MM-YYYY"><br><br>
+            Semester: <input type="text" id="semester" onchange="Semester(this)" placeholder="1"><br><br>
+            Year: <select>
+            <option value="fy">F.Y.</option>
+            <option value="sy">S.Y.</option>
+            <option value="ty">T.Y.</option>
+            <option value="btech">B.Tech.</option>
+        </select><br><br>
+            Department: <select>
+            <option value="comp">Computer Science</option>
+            <option value="mech">Mechanical Engineering</option>
+            <option value="civil">Civil Engineering</option>
+            <option value="entc">ENTC</option>
+            <option value="elec">Electrical</option>
+            <option value="it">IT</option>
+            <option value="chem">Chemical Engineering</option>
+        </select><br><br>
+            Email: <input type="text" id="mail" onchange="Email(this)" placeholder="xyz@mitaoe.ac.in"><br><br>
+            Student Mobile Number: <input type="text" id="Sno" onchange="SphoneNo(this)" placeholder="+918382623742"><br><br>
+            Parent Mobile Number: <input type="text" id="Pno" onchange="PphoneNo(this)" placeholder="+918382623742"><br><br>
+            Address: <input type="text" id="address" onchange="add(this)"placeholder="Address"><br><br>
+            <button onclick="myFunc()">Submit</button>
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+</body>
+</html>
